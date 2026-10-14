@@ -1,0 +1,39 @@
+# rush_hour.txt: ten sam SOR w godzinie szczytu (wiecej pacjentow, wczesne zdarzenie masowe)
+
+arrival.lambda_per_sec                 = 3.2
+arrival.mass_casualty.enabled          = true
+arrival.mass_casualty.at_second        = 40
+arrival.mass_casualty.rate_per_sec     = 25
+
+triage_distribution.red                = 0.10
+triage_distribution.yellow             = 0.20
+triage_distribution.green              = 0.50
+triage_distribution.blue               = 0.20
+
+staff.chirurg                          = 3
+staff.ortopeda                         = 4
+staff.kardiolog                        = 3
+staff.consultants.surg                 = 1
+staff.consultants.card                 = 1
+
+equipment.ct                           = 1
+equipment.xray                         = 2
+equipment.usg                          = 1
+equipment.or                           = 2
+equipment.anesthesiologist             = 2
+equipment.icu_beds                     = 5
+equipment.defib                        = 2
+equipment.echo                         = 1
+equipment.vent                         = 2
+equipment.dial                         = 1
+equipment.endo                         = 1
+equipment.lab                          = 2
+equipment.blood                        = 3
+equipment.neuro                        = 1
+equipment.trauma_kit                   = 2
+equipment.ortho_set                    = 2
+equipment.ekg                          = 2
+
+timeouts.deadlock_ms                   = 8000
+timeouts.backoff_min_ms                = 1000
+timeouts.backoff_max_ms                = 3000
